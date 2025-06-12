@@ -2,7 +2,7 @@ import {forwardRef} from "react";
 import {BaseInputProps} from "@/components/ui/input/props";
 
 export const Input = forwardRef<HTMLInputElement, BaseInputProps>(
-    ({ label, error, icon: Icon, required, className = '', ...props }, ref) => {
+    ({label, error, icon: Icon, required, className = '', ...props}, ref) => {
         return (
             <div className="w-full">
                 {label && (
@@ -12,7 +12,7 @@ export const Input = forwardRef<HTMLInputElement, BaseInputProps>(
                 )}
                 <div className="relative">
                     {Icon && (
-                        <Icon className="absolute left-3 top-3.5 w-5 h-5 text-gray-400" />
+                        <Icon className="absolute left-3 top-3.5 w-5 h-5 text-gray-400"/>
                     )}
                     <input
                         ref={ref}

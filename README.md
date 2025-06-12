@@ -11,6 +11,7 @@ Modern ve güvenli bir authentication sistemi - NextJS 15, Prisma, MySQL ve Next
 ## 🚀 Özellikler
 
 ### 🔑 Authentication Sistemi
+
 - **Login/Register** - Güçlü validasyon ile
 - **Social Auth** - Google, GitHub, Discord, Auth0 desteği
 - **Forgot/Reset Password** - Email ile güvenli şifre sıfırlama
@@ -18,6 +19,7 @@ Modern ve güvenli bir authentication sistemi - NextJS 15, Prisma, MySQL ve Next
 - **Session Management** - JWT tabanlı güvenli oturumlar
 
 ### 🛡️ Güvenlik
+
 - **Rate Limiting** - API isteklerini sınırlama
 - **Login Attempt Tracking** - Şüpheli aktivite takibi
 - **Strong Password Policy** - Güçlü şifre zorunluluğu
@@ -25,6 +27,7 @@ Modern ve güvenli bir authentication sistemi - NextJS 15, Prisma, MySQL ve Next
 - **Secure Headers** - XSS ve diğer saldırılara karşı koruma
 
 ### 🎨 Modern Tasarım
+
 - **Responsive Design** - Tüm cihazlarda mükemmel görünüm
 - **Dark/Light Mode** - Kullanıcı tercihi desteği
 - **Glassmorphism Effects** - Modern UI tasarımı
@@ -32,6 +35,7 @@ Modern ve güvenli bir authentication sistemi - NextJS 15, Prisma, MySQL ve Next
 - **Component-Based Architecture** - Yeniden kullanılabilir bileşenler
 
 ### 📊 Veritabanı
+
 - **Prisma ORM** - Type-safe database operations
 - **MySQL 8.0** - Güvenilir ve performanslı
 - **Migration System** - Veritabanı versiyon kontrolü
@@ -39,18 +43,18 @@ Modern ve güvenli bir authentication sistemi - NextJS 15, Prisma, MySQL ve Next
 
 ## 🛠️ Teknoloji Stack
 
-| Kategori | Teknoloji | Açıklama |
-|----------|-----------|----------|
-| **Frontend** | NextJS 15 | React tabanlı full-stack framework |
-| **Styling** | Tailwind CSS 4 | Utility-first CSS framework |
-| **Database** | MySQL 8.0 | İlişkisel veritabanı |
-| **ORM** | Prisma | Type-safe database client |
-| **Auth** | NextAuth.js | Authentication library |
-| **Validation** | Zod | TypeScript-first schema validation |
-| **Forms** | React Hook Form | Performant forms with easy validation |
-| **Icons** | Lucide React | Beautiful & consistent icons |
-| **Email** | Nodemailer | Email sending service |
-| **Deployment** | Vercel | Serverless deployment platform |
+| Kategori       | Teknoloji       | Açıklama                              |
+|----------------|-----------------|---------------------------------------|
+| **Frontend**   | NextJS 15       | React tabanlı full-stack framework    |
+| **Styling**    | Tailwind CSS 4  | Utility-first CSS framework           |
+| **Database**   | MySQL 8.0       | İlişkisel veritabanı                  |
+| **ORM**        | Prisma          | Type-safe database client             |
+| **Auth**       | NextAuth.js     | Authentication library                |
+| **Validation** | Zod             | TypeScript-first schema validation    |
+| **Forms**      | React Hook Form | Performant forms with easy validation |
+| **Icons**      | Lucide React    | Beautiful & consistent icons          |
+| **Email**      | Nodemailer      | Email sending service                 |
+| **Deployment** | Vercel          | Serverless deployment platform        |
 
 ## 📁 Proje Yapısı
 
@@ -80,23 +84,28 @@ Modern ve güvenli bir authentication sistemi - NextJS 15, Prisma, MySQL ve Next
 ## 🚀 Kurulum
 
 ### Ön Koşullar
+
 - Node.js 18+
 - MySQL 8.0
 - Git
 
 ### 1. Projeyi Klonlayın
+
 ```bash
 git clone https://github.com/biyonik/full-auth-app.git
 cd full-auth-app
 ```
 
 ### 2. Bağımlılıkları Yükleyin
+
 ```bash
 npm install
 ```
 
 ### 3. Environment Variables
+
 `.env` dosyası oluşturun:
+
 ```env
 # Database
 DATABASE_URL="mysql://root@localhost:3306/auth_system"
@@ -119,6 +128,7 @@ SMTP_PASS="your-app-password"
 ```
 
 ### 4. Veritabanını Hazırlayın
+
 ```bash
 # MySQL'de veritabanı oluşturun
 CREATE DATABASE auth_system CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -131,6 +141,7 @@ set NODE_TLS_REJECT_UNAUTHORIZED=0 && npx prisma generate
 ```
 
 ### 5. Projeyi Çalıştırın
+
 ```bash
 npm run dev
 ```
@@ -140,12 +151,14 @@ Tarayıcınızda `http://localhost:3000` adresini açın.
 ## 📊 Veritabanı Şeması
 
 ### Temel Tablolar
+
 - **Users** - Kullanıcı bilgileri
 - **Accounts** - OAuth hesap bağlantıları
 - **Sessions** - Aktif oturumlar
 - **VerificationTokens** - Email doğrulama token'ları
 
 ### Güvenlik Tabloları
+
 - **PasswordResetTokens** - Şifre sıfırlama token'ları
 - **EmailVerificationTokens** - Email doğrulama token'ları
 - **LoginAttempts** - Giriş denemesi kayıtları
@@ -154,6 +167,7 @@ Tarayıcınızda `http://localhost:3000` adresini açın.
 ## 🔧 Geliştirme
 
 ### Prisma Commands
+
 ```bash
 # Database'i görüntüle
 npx prisma studio
@@ -166,6 +180,7 @@ npx prisma migrate reset
 ```
 
 ### Yararlı Scripts
+
 ```bash
 # Development server
 npm run dev
@@ -186,12 +201,14 @@ npm run type-check
 ## 🚢 Deployment
 
 ### Vercel Deployment
+
 1. GitHub'a push yapın
 2. Vercel'e projeyi import edin
 3. Environment variables'ları ekleyin
 4. Deploy edin
 
 ### Database Setup (Production)
+
 - PlanetScale (önerilen)
 - Railway
 - AWS RDS

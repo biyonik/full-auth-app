@@ -3,7 +3,7 @@ import {PasswordInputProps} from "@/components/ui/input/props";
 import {Eye, EyeOff} from "lucide-react";
 
 export const PasswordInput = forwardRef<HTMLInputElement, PasswordInputProps>(
-    ({ showPasswordToggle = true, register, name, ...props }, ref) => {
+    ({showPasswordToggle = true, register, name, ...props}, ref) => {
         const [showPassword, setShowPassword] = useState(false);
         const registerProps = register ? register(name) : {};
 
@@ -16,7 +16,7 @@ export const PasswordInput = forwardRef<HTMLInputElement, PasswordInputProps>(
                 )}
                 <div className="relative">
                     {props.icon && (
-                        <props.icon className="absolute left-3 top-3.5 w-5 h-5 text-gray-400" />
+                        <props.icon className="absolute left-3 top-3.5 w-5 h-5 text-gray-400"/>
                     )}
                     <input
                         ref={ref}
@@ -35,7 +35,7 @@ export const PasswordInput = forwardRef<HTMLInputElement, PasswordInputProps>(
                             onClick={() => setShowPassword(!showPassword)}
                             className="absolute right-3 top-3.5 text-gray-400 hover:text-gray-600 transition-colors"
                         >
-                            {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
+                            {showPassword ? <EyeOff className="w-5 h-5"/> : <Eye className="w-5 h-5"/>}
                         </button>
                     )}
                 </div>

@@ -2,7 +2,7 @@ import {Chrome, Github} from "lucide-react";
 import React from "react";
 
 export default function SocialLoginButtons() {
-    
+
     const handleSocialAuth = (provider: 'google' | 'github') => {
         console.log(`Signing up with ${provider}`);
         // NextAuth.js signIn function will be called here

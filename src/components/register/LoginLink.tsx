@@ -6,7 +6,7 @@ export default function LoginLink() {
         <p className="text-sm text-gray-600">
             Zaten hesabınız var mı?{' '}
             <Link href="/login"
-               className="text-blue-600 hover:text-blue-700 font-semibold hover:underline transition-colors">
+                  className="text-blue-600 hover:text-blue-700 font-semibold hover:underline transition-colors">
                 Giriş Yapın
             </Link>
         </p>
